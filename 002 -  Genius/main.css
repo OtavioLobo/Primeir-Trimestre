@@ -1,0 +1,112 @@
+:root {
+    --color-1: #2ecc71;
+    --color-2: rgb(67, 67, 221);
+    --color-3: #e74c3c;
+    --color-4: yellow;
+
+
+    --pad-size: 200px;
+    --big-radius: 100%;
+    --small-radius: 5%;
+    --gap: 5px;
+    --board-size: calc((var(--pad-size) * 2) + (var(--gap) * 4));
+    --dark: #262626;
+
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    padding: 0;
+    border: 0 none;
+
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    background-color:#262626;
+
+}
+
+
+@keyframes piscadela {
+    50% {
+        background-color: white;
+    }
+}
+
+
+main {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+
+    width: var(--board-size);
+    height: var(--board-size);
+}
+
+main>div {
+    width: 50%;
+    flex: none;
+    border: none;
+    cursor: pointer;
+    display: block;
+    filter: brightness(0.7);
+    width: var(--pad-size);
+    height: var(--pad-size);
+    margin: var(--gap);
+}
+
+main>div:nth-child(1) {
+    background-color: var(--color-1);
+    border-radius: var(--big-radius) var(--small-radius) 0 var(--small-radius);
+
+}
+
+main>div:nth-child(2) {
+    background-color: var(--color-2);
+    border-radius: var(--small-radius) var(--big-radius) var(--small-radius) 0;
+
+}
+
+main>div:nth-child(3) {
+    background-color: var(--color-3);
+    border-radius: var(--small-radius) 0 var(--small-radius) var(--big-radius);
+
+}
+
+main>div:nth-child(4) {
+    background-color: var(--color-4);
+    border-radius: 0 var(--small-radius) var(--big-radius) var(--small-radius);
+
+}
+
+main>div.animate {
+    /* background-color: white; */
+    /* usado no exemplo transition */
+    animation: piscadela .3s ease-in-out;
+    /* animation-name: piscadela;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out; */
+}
+
+div.pontuacao {
+    background-color: #00000099;
+    color: #FFFFFF;
+    position: fixed;
+    padding: 5vmin;
+    text-align: center;
+    font-size: 35px;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 35px;
+}

@@ -1,0 +1,147 @@
+/* https://flatuicolors.com/palette/de */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    font-family: 'Roboto', sans-serif;
+    --ascent-color: #2f2841;
+    --background-color: #201b2c;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: var(--background-color);
+}
+
+img {
+    position: absolute;
+
+}
+header {
+    text-align: center;
+    color: #77ffc0;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+
+    margin-bottom:.25em;
+    padding: .25em;
+}
+.action-bar input{
+    width: 100%;
+    border: none;
+    border: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background: #514869;
+    color: #f0ffffde;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+}
+.action-bar button{
+    width: 47%;
+    align-items: center;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #2b134b;
+    background: #00ff88;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #00ff8052;
+}
+
+h1 {
+    color: #77ffc0;
+
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.modal {
+    background-color: #2f2841; /* todo */
+    box-shadow: 0px 10px 40px #00000056;
+    border-radius: 20px;
+    padding: 2em 4em;
+    margin: 1em;
+    position: relative;
+    color: #dfdddd;
+}
+
+.modal .bt-close {
+    position: absolute;
+    height: 2em;
+    width: 2em;
+    right: -.5em;
+    top: -.5em;   
+    border-radius: 50%;
+    border: 2px solid #000000;
+    color: #77ffc0;
+    background-color: #313133;
+    cursor: pointer;
+}
+
+.modal h1 {
+    color: #77ffc0;
+    font-weight: 800;
+    display: block;
+    margin-bottom: .5em;
+    padding-top: .5em;
+    margin: 0 0 .25em 0;
+    padding: 0;
+}
+
+.modal form > div {
+    margin-bottom: 1em;
+}
+
+.modal form > div > label {
+    display: block;
+}
+
+.modal form > div > input {
+    width: 100%;
+    border: none;
+    border: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    background: #514869;
+    color: #f0ffffde;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+.modal div.action {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: .5em;
+    padding-top: .5em;
+}
+
+.action button {
+
+    width: 100%;
+    padding: 16px 0px;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #2b134b;
+    background: #00ff88;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #00ff8052;
+}
